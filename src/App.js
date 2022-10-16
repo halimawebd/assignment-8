@@ -1,4 +1,5 @@
 import './App.css';
+
 import Header from './component/Home/Header';
 import Shop from './component/Home/Shop/Shop';
 import Images from './component/Images/Images';
@@ -12,6 +13,7 @@ function  App() {
       <Text></Text>
       <Shop></Shop>
       <Images></Images>
+     
     </div>
   )
 }

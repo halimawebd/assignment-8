@@ -3,3 +3,8 @@
   background-color: lightpink;
   padding-left:100px;
 }
+.header-content{
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+}

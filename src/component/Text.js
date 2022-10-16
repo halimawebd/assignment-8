@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './Text.css';
 const Text = () => {
     return (
-        <div>
-            <h1>Badminton today's play</h1>
+        <div className='text-list'>
+            <h3>Badminton today's play</h3>
         </div>
     );
 };

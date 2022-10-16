@@ -1,23 +1,68 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    /* background-color:rgb(208, 228, 208); */
 }
 .products-container{
     display: grid;
+    background-color:rgb(238, 225, 225);
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
 }
 .images{
     width: 100px;
     height: 100px;
+    margin-top: 5px;
 }
-.cart-container{
+.list-class{
+    padding: 15px;
+    
+}
+.list-class h4{
+    margin: 0;
+}
+
+
+.images-container{
     display: flex;
-    /* padding-left: 100px; */
+    margin: 5px;
+    padding-left: 10px;
+}
+.about{
+    display:flex;
+    justify-content: space-around;
+    box-shadow:rgba(240, 46, 170, 0.4) 5px 5px, 
+    rgba(240, 46, 170, 0.3) 10px 10px, 
+    rgba(240, 46, 170, 0.2) 15px 15px, 
+    rgba(240, 46, 170, 0.1) 20px 20px,
+     rgba(240, 46, 170, 0.05) 25px 25px; 
+}
+.weight{
+    display: flex;
+    flex-direction: column;
 
 }
-.images-container{
-  margin: 5px;
-    padding-left:  10px;;
+.height{
+    display: flex;
+    flex-direction: column; 
+}
+.age{
+    display: flex;
+    flex-direction: column;
+}
+.break{
+ flex-direction: column;
+ display: flex;
+}
+.break-time{
+    text-decoration: none;
+    padding: 8px;
+    background-color: beige;
+    border-radius: 50%;
+}
+.break-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
