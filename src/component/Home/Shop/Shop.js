@@ -49,7 +49,7 @@ const Shop = () => {
             <p> 23</p>
             </div>
             </div>
-            {/* <div className='break'>
+            <div className='break'>
            <h2> Add A Break</h2>
            <div className='break-container'>
          <a className='break-time' href ="#/">10</a>
@@ -57,7 +57,7 @@ const Shop = () => {
          <a className='break-time'href="#/">30</a>
          <a className='break-time' href="#/">40</a>
         </div>
-         </div> */}
+         </div>
          </div>
          
        
