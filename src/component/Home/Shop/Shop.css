@@ -7,3 +7,17 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
 }
+.images{
+    width: 100px;
+    height: 100px;
+}
+.cart-container{
+    display: flex;
+    /* padding-left: 100px; */
+
+}
+.images-container{
+  margin: 5px;
+    padding-left:  10px;;
+}
+

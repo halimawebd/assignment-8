@@ -8,8 +8,8 @@ const Product = (props) => {
           <img src={img} alt=""></img>
         <div className='product-info'>
         <p className='product-name'>{name}</p>
-        <p>For Age: {ForAge}</p>
-          <p><small>Time: {Time}</small></p>
+        <p>For Age: 20.25{ForAge}</p>
+          <p><small>Time required: 30m{Time}</small></p>
           </div>
           <button className='btn-cart'>
             <p>Add to list</p>

@@ -4,35 +4,35 @@
       "id": "63498017b79e298e93af6e4f",
       "For age": "20.25",
       "name": "Mustakim Azlan",
-      "Time":"40s"
+      "Time required":"30m"
     },
     {
       "img": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "id": "6349801798e72f07a78369a2",
       "For age": "30.25",
       "name": "Thomas Serer",
-      "Time":"40s"
+      "Time required":"30m"
     },
     {
       "img": "https://images.unsplash.com/photo-1595220427358-8cf2ce3d7f89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80",
       "id": "63498017880ccfbc03933874",
       "For age": "30.25",
       "name": "Mahmur Marganti",
-      "Time":"40s"
+      "Time required":"30m"
     },
     {
       "img": "https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFkbWludG9uJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": "6349801792be17b6b8822eb9",
       "For age": "30.25",
       "name": "frame harirak",
-      "Time":"40s"
+      "Time required":"30m"
     },
     {
       "img": "https://images.unsplash.com/photo-1613918431703-aa50889e3be9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFkbWludG9uJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": "63498017d099dca6ff648740",
       "For age": "35.25",
       "name": "Salman Hossain Saif",
-      "time":"40s"
+      "time":"30m"
       
     },
     {
@@ -40,6 +40,6 @@
       "id": "634980172647144780b9405d",
       "For age": "30.25",
       "name": "Odom Aguirre",
-      "time": "40s"
+      "time": "40m"
     }
   ]
