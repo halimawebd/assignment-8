@@ -35,7 +35,7 @@ const Shop = () => {
             <p>Newdille,India</p>
           </div>
           </div>
-            {/* <div className='about'>
+            <div className='about'>
            <div className='weight'> 
             <p>weight </p>
            <p>34</p>
@@ -48,7 +48,7 @@ const Shop = () => {
                 <p>Age</p>
             <p> 23</p>
             </div>
-            </div> */}
+            </div>
             {/* <div className='break'>
            <h2> Add A Break</h2>
            <div className='break-container'>
