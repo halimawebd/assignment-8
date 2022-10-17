@@ -7,13 +7,21 @@ import './Shop.css';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
+    const [list,setList] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
         .then(res=> res.json())
         .then(data => setProducts(data))
+  },[]);
 
-    },[]);
+  const handleAddToList = (product) => {
+    console.log(product);
+    // list.push(product);
+    const newList = [...list, product];
+    setList(newList);
+
+   }
     return (
       <div className='shop-container'>
       <div className="products-container">
@@ -21,6 +29,7 @@ const Shop = () => {
             products.map(product=><Product
                key={product.id}
                product={product}
+               handleAddToList={handleAddToList}
                ></Product>)
           }
           </div>
@@ -33,20 +42,21 @@ const Shop = () => {
           <div className='list-class'>
           <h4>Reheana huque</h4>
             <p>Newdille,India</p>
+           
           </div>
           </div>
             <div className='about'>
            <div className='weight'> 
             <p>weight </p>
-           <p>34</p>
+           <p>34kg</p>
            </div> 
             <div className='height'>
                 <p>height</p>
-            <p>24</p>
+            <p>5.7</p>
             </div>
             <div className='age'>
                 <p>Age</p>
-            <p> 23</p>
+            <p> 23yers</p>
             </div>
             </div>
             <div className='break'>
@@ -58,10 +68,19 @@ const Shop = () => {
          <a className='break-time' href="#/">40</a>
         </div>
          </div>
+         <div className='details'>
+          <h3>ExerCise Details</h3>
+          <div className='ExerCise time'>
+            <h5>ExerCise Time:{list.length}</h5>
+          </div>
+          <div className='Break-text'>
+            <h5>Break Time</h5>
+          </div>
+        </div >
+        <button className='activity'>Activitty Completed</button>
          </div>
-         
-       
-    </div>
+        
+         </div>
         
     );
 };

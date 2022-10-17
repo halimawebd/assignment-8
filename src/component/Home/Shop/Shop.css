@@ -8,6 +8,10 @@
     background-color:rgb(238, 225, 225);
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
+    margin: 100px 50px;
+}
+.cart-container{
+background-color: cornsilk;
 }
 .images{
     width: 100px;
@@ -21,8 +25,6 @@
 .list-class h4{
     margin: 0;
 }
-
-
 .images-container{
     display: flex;
     margin: 5px;
@@ -53,16 +55,38 @@
 .break{
  flex-direction: column;
  display: flex;
+ padding: 10px;
 }
 .break-time{
     text-decoration: none;
     padding: 8px;
-    background-color: beige;
+    background-color:blueviolet;
     border-radius: 50%;
-}
+    color: white;
+ }
 .break-container{
     display: flex;
+    background-color: darkgrey;
     justify-content: space-between;
-    padding: 0 15px;
-}
+    padding: 20px;
+    margin-top: 15px;
+  }
+  .details{
+    padding: 10px;
+    /* background-color: cornsilk; */
+  }
+  @media screen and (max-width:1100px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .ExerCise time{
+    background-color:rgb(228, 204, 204);
+    border: 100%;
+  }
+  .Break-text{
+    background-color:rgb(208, 166, 166);
+    border: 100%; 
+   }
+ 
 
