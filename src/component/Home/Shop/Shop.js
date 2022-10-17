@@ -2,26 +2,37 @@ import React, { useEffect, useState } from 'react';
 import Cart from './Cart/Cart';
 import Product from '../../Product/Product';
 // import Images from '../../Images/Images';
-
 import './Shop.css';
+import { toast } from 'react-toastify';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [list,setList] = useState([]);
+    const [breakTime, setBreakTime] =  useState(0);
 
     useEffect(() => {
-        fetch('data.json')
+    fetch('data.json')
         .then(res=> res.json())
         .then(data => setProducts(data))
   },[]);
-
   const handleAddToList = (product) => {
-    console.log(product);
+  console.log(product);
     // list.push(product);
     const newList = [...list, product];
     setList(newList);
+  }
+   const handleBreak = (time) =>{
+    setBreakTime(time)
+}
 
-   }
+useEffect(() =>{
+  localStorage.setItem('time',JSON.stringify(breakTime))
+  },[breakTime]);
+
+  const handleBreakTime = (second) =>{
+    setBreakTime(second)
+  }
+
     return (
       <div className='shop-container'>
       <div className="products-container">
@@ -62,27 +73,30 @@ const Shop = () => {
             <div className='break'>
            <h2> Add A Break</h2>
            <div className='break-container'>
-         <a className='break-time' href ="#/">10</a>
-         <a className='break-time' href="#/">20</a>
-         <a className='break-time'href="#/">30</a>
-         <a className='break-time' href="#/">40</a>
+         <button className='break-time' onClick={()=>handleBreak(10)}>10s</button>
+         <button className='break-time' onClick={()=>handleBreak(20)} >20s</button>
+         <button className='break-time' onClick={()=>handleBreak(30)}>30s</button>
+         <button className='break-time' onClick={()=>handleBreak(40)}>40s</button>
         </div>
          </div>
          <div className='details'>
           <h3>ExerCise Details</h3>
-          <div className='ExerCise time'>
-            <h5>ExerCise Time:{list.length}</h5>
+          <div className='exercise-time'>
+            <h5 >ExerCise Time:{list.length}</h5>
           </div>
           <div className='Break-text'>
-            <h5>Break Time</h5>
+            <h5>Break Time:{breakTime}</h5>
           </div>
-        </div >
-        <button className='activity'>Activitty Completed</button>
-         </div>
-        
-         </div>
-        
-    );
-};
+        </div>
+       <button onClick={() => toast("Wow your activity is completed !")} className='activity'>
+          <h1  style={{color:"white"}}>Activity Completed</h1>
+          </button>
+          {/* <button onClick={() => toast("Wow your activity is completed !")} cl>
+            <h1>Hello</h1>
+          </button> */}
+       </div>
+        </div>
+        );
+      };
 
 export default Shop;

@@ -70,6 +70,7 @@ background-color: cornsilk;
     justify-content: space-between;
     padding: 20px;
     margin-top: 15px;
+    border-radius: 8px;
   }
   .details{
     padding: 10px;
@@ -80,13 +81,26 @@ background-color: cornsilk;
         grid-template-columns: repeat(2, 1fr);
     }
   }
-  .ExerCise time{
-    background-color:rgb(228, 204, 204);
+  .exercise-time{
+    background-color:rgb(208, 166, 166);
     border: 100%;
+    padding: 2%;
+    margin-top: 15px;
+    border-radius: 8px;
   }
   .Break-text{
     background-color:rgb(208, 166, 166);
     border: 100%; 
+    padding: 2%;
+    margin-top: 15px;
+    border-radius: 8px;
    }
+   .activity{
+    font-size: medium;
+    width: 100%;
+    background: #95A0A7;
+    border: none;
+   border-radius: 8px;
+  }
  
 
