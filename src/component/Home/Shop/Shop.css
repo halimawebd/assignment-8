@@ -1,8 +1,9 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    /* background-color:rgb(208, 228, 208); */
-}
+    flex-wrap: wrap;
+   
+   }
 .products-container{
     display: grid;
     background-color:rgb(238, 225, 225);
@@ -33,7 +34,8 @@ background-color: cornsilk;
 .about{
     display:flex;
     justify-content: space-around;
-    box-shadow:rgba(240, 46, 170, 0.4) 5px 5px, 
+    align-items: flex-end;
+     box-shadow:rgba(240, 46, 170, 0.4) 5px 5px, 
     rgba(240, 46, 170, 0.3) 10px 10px, 
     rgba(240, 46, 170, 0.2) 15px 15px, 
     rgba(240, 46, 170, 0.1) 20px 20px,
@@ -96,11 +98,25 @@ background-color: cornsilk;
     border-radius: 8px;
    }
    .activity{
-    font-size: medium;
     width: 100%;
     background: #95A0A7;
     border: none;
    border-radius: 8px;
+ 
   }
+  .activity:hover{
+    background-color:rgb(95, 95, 209);
+}
+  /* @media (max-width: 576px){
+    .shop-container > div{
+       width: 100%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .shop-container > div{
+        width: 100%;
+    }
+  } */
  
 

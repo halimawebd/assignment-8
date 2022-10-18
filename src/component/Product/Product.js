@@ -2,8 +2,10 @@ import React from 'react';
 import './Product.css';
 
 const Product = (props) => {
- const {name, img, Time, ForAge} = props.product;
-  
+  // console.log(props.product)
+ const {name, img, time, ForAge} = props.product;
+  // console.log(Time)
+  const {handleAddToList} = props;
     return (
         <div className='product'>
           <img src={img} alt=""></img>
@@ -12,9 +14,10 @@ const Product = (props) => {
         <p>Best performance, best outcome.</p>
         
         <p>For Age: 20.25{ForAge}</p>
-          <p><small>Time required: 30m{Time}</small></p>
+          <p><small>Time required: {time} m</small></p>
+
           </div>
-          <button onClick={() => props.handleAddToList(props.product)} className='btn-cart'>
+          <button onClick={() => handleAddToList(props.product)} className='btn-cart'>
             <p>Add to list</p>
           </button>
         </div>

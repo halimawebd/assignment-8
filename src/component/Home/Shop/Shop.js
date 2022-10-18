@@ -5,11 +5,16 @@ import Product from '../../Product/Product';
 import './Shop.css';
 import { toast } from 'react-toastify';
 
-const Shop = () => {
+const Shop = (props) => {
+  console.log(props)
     const [products, setProducts] = useState([]);
-    const [list,setList] = useState([]);
+    const [list,setList] = useState(0);
     const [breakTime, setBreakTime] =  useState(0);
-
+    let time = 0
+    for (const list in props){
+      console.log(list)
+      time = time + list.time
+    }
     useEffect(() => {
     fetch('data.json')
         .then(res=> res.json())
@@ -18,8 +23,8 @@ const Shop = () => {
   const handleAddToList = (product) => {
   console.log(product);
     // list.push(product);
-    const newList = [...list, product];
-    setList(newList);
+   const newTime = list + product.time
+   setList(newTime)
   }
    const handleBreak = (time) =>{
     setBreakTime(time)
@@ -59,7 +64,7 @@ useEffect(() =>{
             <div className='about'>
            <div className='weight'> 
             <p>weight </p>
-           <p>34kg</p>
+           <p>48kg</p>
            </div> 
             <div className='height'>
                 <p>height</p>
@@ -82,14 +87,14 @@ useEffect(() =>{
          <div className='details'>
           <h3>ExerCise Details</h3>
           <div className='exercise-time'>
-            <h5 >ExerCise Time:{list.length}</h5>
+            <h5 >ExerCise Time:{list}</h5>
           </div>
           <div className='Break-text'>
             <h5>Break Time:{breakTime}</h5>
           </div>
         </div>
        <button onClick={() => toast("Wow your activity is completed !")} className='activity'>
-          <h1  style={{color:"white"}}>Activity Completed</h1>
+          <h3 style={{color:"white"}}>Activity Completed</h3>
           </button>
           {/* <button onClick={() => toast("Wow your activity is completed !")} cl>
             <h1>Hello</h1>
